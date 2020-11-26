@@ -45,7 +45,12 @@ public class UsersMissionsEntity extends PanacheEntity {
 		this.status = status;
     }
     
-    public static List<UsersMissionsEntity> findByMission(Long missionId){
-        return find("missionid", missionId).list();
+    public static List<UsersMissionsEntity> findByUserId(Long userId){
+        return list("userid", userId);
     }
+
+	@Override
+	public String toString() {
+		return "UsersMissionsEntity [missionId=" + missionId + "]";
+	}
 }

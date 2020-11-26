@@ -18,9 +18,7 @@ import org.eclipse.microprofile.openapi.annotations.media.Content;
 import org.eclipse.microprofile.openapi.annotations.parameters.Parameter;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
-
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
-
 
 @Path("/user")
 public class UserResource {

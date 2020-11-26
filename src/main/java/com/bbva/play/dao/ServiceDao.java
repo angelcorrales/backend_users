@@ -41,7 +41,7 @@ public class ServiceDao {
 
     @Transactional(SUPPORTS)
     public List<UsersMissionsEntity> findMissionsByUser(Long id) {
-        return UsersMissionsEntity.findByMission(id);
+        return UsersMissionsEntity.findByUserId(id);
     }
 
     public List<MissionDto> getMission(List<UsersMissionsEntity> usersMissions) {
