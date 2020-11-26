@@ -14,7 +14,7 @@ This is a CRUD Microservice that covers all operations abour BBVA Play user inte
 
 ## Requirements
 
-To compile and run this demo you will need:
+To compile and run this microservice you will need:
 
 - JDK 1.8+
 - GraalVM
