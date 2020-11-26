@@ -54,7 +54,7 @@ public class UserService {
 
         // Se añade el estado de las misiones del usuario
         for (int i = 0; i < usersMissions.size(); i++) {
-            missions.get(i).setState(usersMissions.get(i).getStatus());
+            missions.get(i).setStatus(usersMissions.get(i).getStatus());
         }
         
         return missions;

@@ -14,7 +14,7 @@ public class MissionDto implements Serializable {
 
     private Amount amount;
 
-    private String state;
+    private String status;
 
     public MissionDto() {
         super();
@@ -36,12 +36,12 @@ public class MissionDto implements Serializable {
         this.image = image;
     }
 
-    public String getState() {
-        return state;
+    public String getStatus() {
+        return status;
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public Amount getAmount() {
