@@ -1,4 +1,4 @@
-package org.acme.backend.user.dto;
+package com.bbva.play.user.dto;
 
 import java.io.Serializable;
 

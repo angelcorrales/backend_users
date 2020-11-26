@@ -1,4 +1,4 @@
-package org.acme.backend.user.dto;
+package com.bbva.play.user.dto;
 
 import java.io.Serializable;
 
@@ -58,6 +58,10 @@ public class MissionDto implements Serializable {
 
 	public void setId(String id) {
 		this.id = id;
-	}
+    }
 
+	@Override
+	public String toString() {
+		return "MissionDto [id=" + id + "]";
+	}
 }

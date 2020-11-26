@@ -1,4 +1,4 @@
-package org.acme.backend.user;
+package com.bbva.play.user;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
@@ -7,13 +7,11 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import javax.ws.rs.*;
 import javax.ws.rs.core.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import org.acme.backend.user.dto.*;
+import com.bbva.play.user.dto.*;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.eclipse.microprofile.openapi.annotations.media.Content;
@@ -35,7 +33,7 @@ public class UserResource {
     @APIResponse(responseCode = "204", description = "User nor found")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("/{id}")
+    @Path("{id}")
     public Response getUser(
     @Parameter(description = "User identifier", required = true)    
     @PathParam("id") Long id) {
@@ -51,7 +49,7 @@ public class UserResource {
     @APIResponse(responseCode = "204", description = "User has no")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("/{id}/missions")
+    @Path("{id}/missions")
     public Response getUserMissions(@PathParam("id") Long id) {
         
         List<MissionDto> list = service.getUserMissions(id);

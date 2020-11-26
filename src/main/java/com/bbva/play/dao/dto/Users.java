@@ -1,12 +1,9 @@
-package org.acme.backend.dao.dto;
+package com.bbva.play.dao.dto;
 
 import java.io.Serializable;
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import javax.validation.constraints.NotNull;
 import javax.persistence.Entity;
-import javax.persistence.Id;
-
-import java.util.List;
 
 @Entity
 public class Users extends PanacheEntity implements Serializable {
