@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
+import io.quarkus.panache.common.Sort;
 
 @Entity
 @Table(name = "usersmissions")
@@ -46,7 +47,7 @@ public class UsersMissionsEntity extends PanacheEntity {
     }
     
     public static List<UsersMissionsEntity> findByUserId(Long userId){
-        return list("userid", userId);
+        return list("userid", Sort.by("missionid"),  userId);
     }
 
 	@Override
